@@ -1,9 +1,5 @@
 # t1_arquitetura
 
-<<<<<<< HEAD
-alunos: 
-        Gabriel Carrasco 22.00906-0
-=======
 alunos: Gabriel Carrasco 22.00906-0
 >>>>>>> 4134ab0e1005401765cb776339cc2058e9b74838
         Gustavo Yudji Hiromoto 22.00849-0
