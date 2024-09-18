@@ -1,0 +1,20 @@
+{
+  "name": "t1_arquitetura",
+  "version": "1.0.0",
+  "description": "alunos: Matheus Alatxeve Pereira 20.00528-8\r         Lucas Machado Pennone 21.01086\r         Gustavo Yudji Hiromoto 22.00849-0\r         Gabriel Carrasco 22.00906-0\r         Isaac d'Andrea 22.01841-7\r         Othavio Carvalho Losovoi 22.01545-0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "nodemon": "^3.1.5"
+  }
+}
