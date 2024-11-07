@@ -27,6 +27,10 @@ app.post('/eventos', async (req, res) => {
     await axios.post('http://localhost:7000/eventos', evento)
   }
   catch (err) {}
+  try {
+    await axios.post('http://localhost:8000/eventos', evento)
+  }
+  catch(err){}
   res.status(200).json({mensagem: 'ok'})
 })
 
