@@ -48,7 +48,7 @@ app.post('/lembretes/:idLembrete/observacoes', async function(req, res){
   
   observacoesPorLembrete[req.params.idLembrete] = observacoesDoLembrete
   
-  await axios.post('http://localhost:10000/eventos', {
+  await axios.post('barramento-de-eventos-service:10000/eventos', {
     type: 'ObservacaoCriada',
     payload: {
       id: idObservacacao,

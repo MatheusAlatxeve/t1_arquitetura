@@ -31,4 +31,20 @@ app.post("/eventos", (req, res) => {
     res.json({ msg: "ok" });
 });
 
-app.listen(PORT, () => console.log(`Logs. Porta ${PORT}.`));
+
+app.listen(PORT, async () => {
+    console.log(`Logs. ${PORT}`);
+    try {
+        const resp = await axios.get('http://barramento-de-eventos-service:10000/eventos');
+        resp.data.forEach((valor) => {
+            baseLogs[idCounter] = {
+                id: idCounter,
+                tipo_evento: evento.type,
+                data_hora: new Date().toLocaleString("pt-BR", { timeZone: "America/Sao_Paulo" })
+            };
+            idCounter++;
+        });
+    } catch (err) {
+        console.error("Erro ao obter eventos:", err);
+    }
+});
